@@ -1,0 +1,11 @@
+# 统一换行符：仓库内一律 LF（消除 Windows CRLF 警告）
+* text=auto eol=lf
+
+# 二进制文件不参与换行转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.ico binary
+*.lock binary
