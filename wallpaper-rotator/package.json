@@ -1,0 +1,37 @@
+{
+  "name": "dsh-wallpaper-rotator",
+  "version": "1.0.0",
+  "description": "DSH 壁纸轮换插件：定时轮换应用背景壁纸（交叉淡化动效），内置 SVG 壁纸集，毛玻璃/压暗/文字阴影/背景不透明度等可读性调节，设置页可配置。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [],
+      "immediately": true
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "wallpaper",
+    "background",
+    "rotation"
+  ],
+  "license": "MIT"
+}

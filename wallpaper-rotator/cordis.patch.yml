@@ -1,0 +1,6 @@
+# dsh-wallpaper-rotator bundle patch
+# 声明在 package.json 的 dsh.bundle.patch，`dsh plugin add` 后自动并入 profile 层栈。
+# 浏览器半区（lib/client.js）由 client-modules 依据 dsh.client 声明自动发现，无需在此声明。
+- insert:
+    - id: wallpaper-rotator
+      name: dsh-wallpaper-rotator
