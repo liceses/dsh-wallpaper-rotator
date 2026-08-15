@@ -16,8 +16,9 @@
 ## 快速开始
 
 ```powershell
-# 1. 安装（GitHub 仓库，通用）
-dsh plugin --profile web add github:liceses/dsh-wallpaper-rotator
+# 1. 安装（npm / GitHub 均可）
+dsh plugin --profile web add dsh-wallpaper-rotator                   # npm（已发布）
+dsh plugin --profile web add github:liceses/dsh-wallpaper-rotator    # GitHub
 
 # 本机开发时也可用仓库内本地路径（仅本机可用）
 # dsh plugin --profile web add D:\path\to\wallpaper-rotator
