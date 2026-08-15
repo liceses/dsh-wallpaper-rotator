@@ -5,14 +5,14 @@ DSH（DeepSeek Harness）壁纸轮换插件：定时轮换应用背景壁纸，�
 ## 安装
 
 ```powershell
-# 本地路径（开发）
-dsh plugin --profile web add D:\path\to\wallpaper-rotator
+# GitHub 仓库（推荐）
+dsh plugin --profile web add github:liceses/dsh-wallpaper-rotator
 
-# npm 仓库
+# npm 仓库（发布后可用）
 dsh plugin --profile web add dsh-wallpaper-rotator
 
-# GitHub
-dsh plugin --profile web add github:<owner>/<repo>
+# 本地开发路径（仅本机可用）
+dsh plugin --profile web add D:\path\to\wallpaper-rotator
 ```
 
 安装后**重启 `dsh web`** 生效。卸载：
