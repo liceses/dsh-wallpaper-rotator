@@ -86,7 +86,7 @@ dsh plugin --profile web remove dsh-wallpaper-rotator
 
 **壁纸实际铺上去是什么样**（效果实拍）：
 
-![内置壁纸应用到界面](docs/screenshots/effect-wallpaper.png)
+![内置壁纸应用到界面](docs/screenshots/effect-wallpaper.jpg)
 *把图片文件夹留空 → 插件回落到内置壁纸集，整张壁纸铺在界面最底层。这张是**真机实拍**：壁纸层 + 主区域底色（背景不透明度 45%）+ 壁纸压暗（25%）+ 毛玻璃模糊（9px）四层一起生效后的样子。用的是内置的渐变壁纸，不是任何个人素材。*
 
 ---
