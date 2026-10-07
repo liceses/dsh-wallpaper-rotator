@@ -84,6 +84,11 @@ dsh plugin --profile web remove dsh-wallpaper-rotator
 ![内置壁纸集](docs/screenshots/builtin-wallpapers.png)
 *内置壁纸集四张：左上「晨光」、右上「海洋」、左下「暮色」、右下「林间」。**这张图不是实拍**，是按源码里的 SVG 定义（线性渐变 + 径向高光）用脚本重绘出来的拼版，脚本见 `_survey/tools/render-builtin-wallpapers.py`。*
 
+**壁纸实际铺上去是什么样**（效果实拍）：
+
+![内置壁纸应用到界面](docs/screenshots/effect-wallpaper.png)
+*把图片文件夹留空 → 插件回落到内置壁纸集，整张壁纸铺在界面最底层。这张是**真机实拍**：壁纸层 + 主区域底色（背景不透明度 45%）+ 壁纸压暗（25%）+ 毛玻璃模糊（9px）四层一起生效后的样子。用的是内置的渐变壁纸，不是任何个人素材。*
+
 ---
 
 <a id="config"></a>
