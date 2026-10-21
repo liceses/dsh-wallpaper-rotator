@@ -4,7 +4,7 @@
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-1.0.0-0ea5e9.svg)](wallpaper-rotator/package.json)
-[![DSH Plugin](https://img.shields.io/badge/DSH-plugin-4f46e5.svg)](https://github.com/liceses/awesome-dsh-plugin)
+[![DSH Plugin](https://img.shields.io/badge/DSH-plugin-4f46e5.svg)](https://github.com/topics/dsh-plugin)
 
 指定一个图片文件夹，插件按你设的间隔把 DSH 的应用背景壁纸一张张换过去（带交叉淡化）；没配文件夹就用随插件分发的 4 张 SVG 渐变壁纸。因为壁纸铺在整个界面的最底层，插件同时给了三个可读性旋钮，让面板和文字在花哨的图上仍然看得清。
 
