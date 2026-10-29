@@ -70,6 +70,9 @@ dsh plugin --profile web remove dsh-wallpaper-rotator
 
 ## 兼容性
 
+- **支持的 DSH 版本**：`engines.dsh = ^0.1.7-rc.1 || ^0.2.1-rc.1`，实测通过 `0.1.7-rc.2` 与 `0.2.1-rc.2`。
+  DSH 安装与启动时都会拿这条声明做硬校验，不匹配就拒绝装载；要在未声明的版本上试，
+  用 `dsh plugin --profile <name> allow-version dsh-wallpaper-rotator@<ver> --dsh-version <ver> --accept-risk` 精确放行。
 - 路由前缀 `/plugins/wallpaper-rotator`（webServer 最长前缀优先，与 client-modules 的 `/plugins` bundle 路由共存）
 - 行 id `wallpaper-rotator`、包名 `dsh-wallpaper-rotator`、配置文件名、主题覆盖 source、CSS 类前缀 `.dswp-` 均唯一
 - 壁纸层仅用 `html::before/::after`（`z-index:-1`）与 `<html>` 内联 CSS 变量，不触碰其他插件 DOM
@@ -90,6 +93,7 @@ dsh plugin --profile web remove dsh-wallpaper-rotator
 
 | 版本 | 说明 |
 |---|---|
+| 1.0.1 | 兼容 DSH 0.2.x：`engines.dsh` 放宽为 `^0.1.7-rc.1 \|\| ^0.2.1-rc.1`（0.2.1-rc.2 实测通过）；补上 `dsh.manifestVersion`。业务代码未改 |
 | 1.0.0 | 静态插件包：路由 / 配置持久化 / 内置壁纸集 / 毛玻璃 / 文字阴影 / 压暗随层内嵌 / 无跳变交叉淡化 |
 
 ## License

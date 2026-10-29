@@ -93,6 +93,10 @@ node --check lib/client.js
 
 ## 兼容性
 
+- **支持的 DSH 版本**：`engines.dsh = ^0.1.7-rc.1 || ^0.2.1-rc.1`，实测通过 `0.1.7-rc.2` 与 `0.2.1-rc.2`
+  （宿主路由 `/plugins/wallpaper-rotator/*` 与浏览器半区 bundle 都验过）。
+  这是硬门禁：DSH 安装和启动时都会比对，不匹配直接拒绝装载；
+  要在未声明的版本上试，用 `dsh plugin --profile <name> allow-version dsh-wallpaper-rotator@<ver> --dsh-version <ver> --accept-risk` 精确放行（只需该包该版本）。
 - 路由前缀、行 id、包名、配置文件名、主题覆盖 source（`wallpaper-rotator`）、CSS 类前缀（`.dswp-`）均唯一
 - 壁纸层仅使用 `html::before/::after`（`z-index:-1`）与 `<html>` 内联 CSS 变量，不触碰其他插件 DOM
 - 主题覆盖经 `theme.overrideTokens` 分层合成，与其他插件令牌覆盖共存
